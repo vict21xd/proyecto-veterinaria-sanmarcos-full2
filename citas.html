@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Cita - Veterinaria San Marcos</title>
+    <meta name="description" content="Solicita una hora de atención para tu mascota en Veterinaria San Marcos.">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Veterinaria San Marcos</h1>
+
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="citas.html">Citas</a>
+            <a href="medicamentos.html" aria-current="page">Medicamentos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Solicitar una cita</h2>
+
+            <img src="img/citas-calendario.jpg"
+                 alt="Icono de un calendario con una huella de mascota, representando la solicitud de citas"
+                 width="500"
+                 height="167"
+                 loading="lazy"
+                 class="imagen-seccion">
+
+            <p>
+                Completa el siguiente formulario para solicitar
+                una hora de atención para tu mascota.
+            </p>
+        </section>
+
+        <section>
+
+            <form id="form-citas" novalidate>
+
+                <div class="campo">
+                    <label for="nombre">Nombre del dueño:</label>
+                    <input type="text"
+                           id="nombre"
+                           name="nombre"
+                           autocomplete="name"
+                           placeholder="Ej: María González"
+                           required
+                           minlength="3">
+                    <span class="error" id="error-nombre" role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email"
+                           id="correo"
+                           name="correo"
+                           autocomplete="email"
+                           placeholder="Ej: maria@gmail.com"
+                           required>
+                    <span class="error" id="error-correo" role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <input type="tel"
+                           id="telefono"
+                           name="telefono"
+                           autocomplete="tel"
+                           placeholder="Ej: +56 9 1234 5678"
+                           required>
+                    <span class="error" id="error-telefono" role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="mascota">Nombre de la mascota:</label>
+                    <input type="text"
+                           id="mascota"
+                           name="mascota"
+                           placeholder="Ej: Luna"
+                           required
+                           minlength="1">
+                    <span class="error" id="error-mascota" role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="especie">Especie:</label>
+                    <input type="text"
+                           id="especie"
+                           name="especie"
+                           list="sugerencias-especie"
+                           placeholder="Ej: Perro, Gato, Conejo..."
+                           required>
+
+                    <datalist id="sugerencias-especie">
+                        <option value="Perro"></option>
+                        <option value="Gato"></option>
+                        <option value="Conejo"></option>
+                        <option value="Ave"></option>
+                    </datalist>
+
+                    <span class="error" id="error-especie" role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="servicio">Servicio:</label>
+
+                <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="consulta">Consulta veterinaria</option>
+                    <option value="vacunacion">Vacunación</option>
+                    <option value="peso">Control de peso</option>
+                    <option value="cirugia">Cirugía menor</option>
+                    <option value="desparasitacion">Desparasitación</option>
+                </select>
+                    <span class="error" id="error-servicio" role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date"
+                           id="fecha"
+                           name="fecha"
+                           required>
+                    <span class="error" id="error-fecha" role="alert"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="hora">Hora:</label>
+                    <input type="time"
+                           id="hora"
+                           name="hora"
+                           required>
+                    <span class="error" id="error-hora" role="alert"></span>
+                </div>
+
+                <button type="submit">
+                    💗 Solicitar cita
+                </button>
+
+                <p id="mensaje-exito"
+                   class="mensaje-exito oculto"
+                   role="status">
+                    Solicitud enviada. Te contactaremos para confirmar tu hora.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Veterinaria San Marcos - Rancagua</p>
+
+        <nav aria-label="Enlaces del pie de página">
+            <a href="index.html">Inicio</a> ·
+            <a href="servicios.html">Servicios</a> ·
+            <a href="citas.html">Citas</a> ·
+            <a href="medicamentos.html">Medicamentos</a> ·
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <p>© 2026 Veterinaria San Marcos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
