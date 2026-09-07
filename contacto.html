@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Veterinaria San Marcos</title>
+    <meta name="description"
+        content="Contáctanos: dirección, teléfono, correo y horario de atención de Veterinaria San Marcos.">
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>Veterinaria San Marcos</h1>
+
+    <nav aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="citas.html">Citas</a>
+        <a href="medicamentos.html">Medicamentos</a>
+        <a href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Contáctanos</h2>
+
+        <img src="img/contacto-ubicacion.jpg"
+            alt="Icono de un pin de ubicación sobre una clínica veterinaria"
+            width="500"
+            height="167"
+            loading="lazy"
+            class="imagen-seccion">
+
+        <p>Estamos aquí para ayudarte a cuidar a tu mascota.</p>
+    </section>
+
+    <section class="info-contacto">
+
+        <article>
+            <h3>📍 Dirección</h3>
+            <p>Rancagua, Región de O'Higgins, Chile</p>
+        </article>
+
+        <article>
+            <h3>📞 Teléfono</h3>
+            <p>
+                <a href="tel:+56982800012">+56 9 8280 0012</a>
+            </p>
+        </article>
+
+        <article>
+            <h3>✉️ Correo</h3>
+            <p>
+                <a href="mailto:san_marcos@veterinariasanmarcos.cl">
+                    san_marcos@veterinariasanmarcos.cl
+                </a>
+            </p>
+        </article>
+
+        <article>
+            <h3>🕐 Horario</h3>
+
+            <p id="horario-resumen">
+                Lunes a viernes: 09:00 - 18:00
+            </p>
+
+            <button type="button"
+                id="btn-horario"
+                class="boton-secundario"
+                aria-expanded="false"
+                aria-controls="horario-extendido">
+                Ver horario completo
+            </button>
+
+            <div id="horario-extendido" class="oculto">
+                <p>Sábado: 09:00 - 14:00</p>
+                <p>Domingo y festivos: cerrado</p>
+                <p>Urgencias: línea telefónica 24 horas</p>
+            </div>
+        </article>
+
+    </section>
+
+    <section>
+        <h2>Escríbenos</h2>
+
+        <form id="form-contacto" novalidate>
+
+            <div class="campo">
+                <label for="nombre-contacto">Nombre:</label>
+
+                <input type="text"
+                    id="nombre-contacto"
+                    name="nombre"
+                    autocomplete="name"
+                    required
+                    minlength="3">
+
+                <span class="error"
+                    id="error-nombre-contacto"
+                    role="alert"></span>
+            </div>
+
+            <div class="campo">
+                <label for="correo-contacto">Correo electrónico:</label>
+
+                <input type="email"
+                    id="correo-contacto"
+                    name="correo"
+                    autocomplete="email"
+                    required>
+
+                <span class="error"
+                    id="error-correo-contacto"
+                    role="alert"></span>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+
+                <textarea id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    required
+                    minlength="10"></textarea>
+
+                <span class="error"
+                    id="error-mensaje"
+                    role="alert"></span>
+            </div>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+            <p id="mensaje-exito-contacto"
+                class="mensaje-exito oculto"
+                role="status">
+                ✅ Mensaje enviado. Te responderemos a la brevedad.
+            </p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>Veterinaria San Marcos - Rancagua</p>
+
+    <nav aria-label="Enlaces del pie de página">
+        <a href="index.html">Inicio</a> ·
+        <a href="servicios.html">Servicios</a> ·
+        <a href="citas.html">Citas</a> ·
+        <a href="medicamentos.html">Medicamentos</a> ·
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <p>© 2026 Veterinaria San Marcos</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
