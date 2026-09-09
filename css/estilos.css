@@ -517,3 +517,732 @@ main > section:nth-child(2) {
     font-weight: bold;
     margin-top: 20px;
 }
+
+.mensaje-exito.oculto {
+    display: none;
+}
+
+.seccion-medicamentos {
+    padding: 40px 20px 60px;
+}
+
+.filtros-medicamentos {
+    max-width: 950px;
+    margin: 0 auto 15px;
+    padding: 25px 30px;
+    background: linear-gradient(135deg, #ffffff, #fff5f9);
+    border-radius: 20px;
+    border: 1px solid #ffe1ed;
+    box-shadow: 0 8px 25px rgba(255, 126, 170, 0.10);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.filtro-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro-campo label {
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.filtro-campo input,
+.filtro-campo select {
+    width: 100%;
+    height: 50px;
+    padding: 10px 16px;
+    border: 2px solid #f0dce5;
+    border-radius: 12px;
+    background-color: white;
+    color: #555;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    outline: none;
+    transition: 0.25s;
+}
+
+.filtro-campo input::placeholder {
+    color: #aaa;
+}
+
+.filtro-campo input:hover,
+.filtro-campo select:hover {
+    border-color: #f5b5cb;
+}
+
+.filtro-campo input:focus,
+.filtro-campo select:focus {
+    border-color: #ff9fc4;
+    box-shadow: 0 0 0 4px rgba(255, 159, 196, 0.15);
+}
+
+.resultado-medicamentos {
+    max-width: 950px;
+    margin: 0 auto 18px;
+    padding: 0 5px;
+    color: #888;
+    font-size: 15px;
+    text-align: right;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(80, 80, 80, 0.08);
+    border: 1px solid #ffe1ed;
+}
+
+.tabla-medicamentos {
+    width: 100%;
+    min-width: 1050px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+}
+
+.tabla-medicamentos thead {
+    background: linear-gradient(135deg, #ff9fc4, #ff7eaa);
+    color: white;
+}
+
+.tabla-medicamentos th {
+    padding: 16px 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.tabla-medicamentos th:first-child {
+    border-radius: 20px 0 0 0;
+}
+
+.tabla-medicamentos th:last-child {
+    border-radius: 0 20px 0 0;
+}
+
+.tabla-medicamentos td {
+    padding: 15px 12px;
+    text-align: center;
+    color: #555;
+    border-bottom: 1px solid #f3e5eb;
+    white-space: nowrap;
+}
+
+.tabla-medicamentos tbody tr {
+    transition: 0.2s;
+}
+
+.tabla-medicamentos tbody tr:nth-child(even) {
+    background-color: #fffafd;
+}
+
+.tabla-medicamentos tbody tr:hover {
+    background-color: #fff0f6;
+}
+
+.tabla-medicamentos tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-medicamentos td:first-child {
+    color: #ff5f82;
+    font-weight: bold;
+}
+
+.tabla-medicamentos td:nth-child(2) {
+    color: #d77b9c;
+    font-weight: bold;
+}
+
+.tabla-medicamentos td:nth-child(7) {
+    font-weight: bold;
+    color: #555;
+}
+
+.tabla-medicamentos td:last-child {
+    color: #ff5f82;
+    font-weight: bold;
+}
+
+.catalogo-medicamentos {
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.formulario-medicamentos {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ffe1ed;
+}
+
+.filtro-medicamento {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.filtro-medicamento label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #5f4050;
+}
+
+.filtro-medicamento select {
+    width: 100%;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 2px solid #f0c5d3;
+    border-radius: 10px;
+    background: #fffafb;
+    color: #5f4050;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.filtro-medicamento select:hover {
+    border-color: #f5b5cb;
+}
+
+.filtro-medicamento select:focus {
+    border-color: #e58aa6;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(229, 138, 166, 0.15);
+}
+
+.filtro-medicamento select:disabled {
+    background: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.mensaje-medicamento {
+    padding: 13px 16px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #fff0f4;
+    color: #c94f6d;
+    font-weight: bold;
+    text-align: center;
+}
+
+.detalle-medicamento {
+    margin-top: 25px;
+}
+
+.detalle-contenido {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ffe1ed;
+    border-top: 5px solid #e58aa6;
+}
+
+.detalle-encabezado {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.detalle-categoria {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #ffe5ed;
+    color: #c94f6d;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.detalle-encabezado h2 {
+    margin: 12px 0 6px;
+    color: #5f4050;
+    font-size: 28px;
+}
+
+.detalle-encabezado p {
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.detalle-datos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.dato-medicamento {
+    padding: 17px;
+    border-radius: 12px;
+    background: #fff7f9;
+    border: 1px solid #f4d5df;
+}
+
+.dato-medicamento span {
+    display: block;
+    margin-bottom: 6px;
+    color: #8a6875;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.dato-medicamento strong {
+    display: block;
+    color: #5f4050;
+    font-size: 15px;
+}
+
+.precio-medicamento {
+    background: #ffeaf0;
+}
+
+.precio-medicamento strong {
+    color: #c94f6d;
+    font-size: 18px;
+}
+
+.oculto {
+    display: none !important;
+}
+
+footer {
+    background-color: #ffcfe7;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer nav {
+    justify-content: center;
+    margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column;
+        min-height: auto;
+        padding: 45px 25px;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .inicio-texto {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .inicio h2 {
+        font-size: 36px;
+    }
+
+    .inicio-imagen {
+        width: 100%;
+    }
+
+    .inicio-imagen img {
+        max-width: 500px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjetas article {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .encabezado-servicios {
+        margin-top: 15px;
+        padding: 40px 20px;
+    }
+
+    .encabezado-servicios h2 {
+        font-size: 32px;
+    }
+
+    .lista-servicios {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px;
+    }
+
+    .tarjeta-servicio {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+@media (max-width: 699px) {
+
+    main {
+        width: 94%;
+        padding: 0;
+    }
+
+    main > section:first-child {
+        margin-top: 20px;
+        padding: 35px 18px 25px;
+        border-radius: 20px;
+    }
+
+    main > section:first-child h2 {
+        font-size: 31px;
+    }
+
+    main > section:first-child p {
+        font-size: 16px;
+    }
+
+    .imagen-seccion {
+        height: auto;
+        min-height: 130px;
+    }
+
+    main > section:nth-child(2) {
+        padding-top: 20px;
+    }
+
+    #form-citas {
+        padding: 28px 20px;
+        border-radius: 22px;
+    }
+
+    .campo {
+        margin-bottom: 18px;
+    }
+
+    .campo input,
+    .campo select {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    #form-citas button {
+        min-height: 54px;
+        font-size: 17px;
+    }
+
+    .seccion-medicamentos {
+        padding: 25px 0 45px;
+    }
+
+    .filtros-medicamentos {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 22px 18px;
+        border-radius: 18px;
+    }
+
+    .resultado-medicamentos {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .tabla-contenedor {
+        border-radius: 16px;
+    }
+
+    .tabla-medicamentos {
+        min-width: 1050px;
+    }
+
+    .catalogo-medicamentos {
+        margin: 20px auto;
+    }
+
+    .formulario-medicamentos {
+        padding: 22px 18px;
+        border-radius: 18px;
+    }
+
+    .detalle-contenido {
+        padding: 22px 18px;
+    }
+
+    .detalle-datos {
+        grid-template-columns: 1fr;
+    }
+
+    .detalle-encabezado h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .inicio {
+        margin-top: 15px;
+        padding: 35px 15px;
+    }
+
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+    .bienvenida {
+        font-size: 16px;
+    }
+
+    .inicio-texto > p:not(.bienvenida) {
+        font-size: 17px;
+    }
+
+    .servicios {
+        padding: 45px 15px;
+    }
+
+    .servicios > h2 {
+        font-size: 28px;
+    }
+
+    .video-informativo {
+        margin: 20px 10px 40px;
+        padding: 35px 15px;
+    }
+
+    .video-informativo h2 {
+        font-size: 26px;
+    }
+
+    .encabezado-servicios {
+        padding: 35px 15px;
+    }
+
+    .encabezado-servicios h2 {
+        font-size: 28px;
+    }
+
+    .encabezado-servicios p {
+        font-size: 17px;
+    }
+
+    .tarjeta-servicio {
+        min-height: 430px;
+    }
+
+    .tarjeta-servicio img {
+        height: 180px;
+    }
+
+    #form-citas {
+        padding: 25px 17px;
+    }
+
+    main > section:first-child h2 {
+        font-size: 28px;
+    }
+
+    .seccion-medicamentos {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .filtros-medicamentos {
+        padding: 20px 15px;
+    }
+
+    .filtro-campo input,
+    .filtro-campo select {
+        font-size: 14px;
+    }
+
+    .resultado-medicamentos {
+        font-size: 14px;
+    }
+
+    .formulario-medicamentos {
+        padding: 20px 15px;
+    }
+
+    .filtro-medicamento select {
+        font-size: 14px;
+    }
+
+    .detalle-contenido {
+        padding: 20px 15px;
+    }
+
+    .detalle-encabezado h2 {
+        font-size: 22px;
+    }
+
+    .dato-medicamento {
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .detalle-datos {
+        grid-template-columns: 1fr;
+    }
+}
+
+.info-contacto {
+    max-width: 1100px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.info-contacto article {
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f3d7e4;
+}
+
+.info-contacto article h3 {
+    color: #d85b8a;
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+
+.info-contacto article p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.info-contacto article a {
+    color: #c94f7f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info-contacto article a:hover {
+    text-decoration: underline;
+}
+
+#horario-extendido {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #f1d6e2;
+}
+
+.imagen-seccion {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+#form-contacto {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+}
+
+#form-contacto .campo {
+    margin-bottom: 20px;
+}
+
+#form-contacto label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+#form-contacto input,
+#form-contacto textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e5c5d4;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#form-contacto input:focus,
+#form-contacto textarea:focus {
+    outline: none;
+    border-color: #d85b8a;
+    box-shadow: 0 0 0 3px rgba(216, 91, 138, 0.12);
+}
+
+#form-contacto textarea {
+    resize: vertical;
+}
+
+#form-contacto > button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background: #d85b8a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-contacto > button:hover {
+    background: #c94f7f;
+}
+
+@media (max-width: 800px) {
+    .info-contacto {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .info-contacto {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    #form-contacto {
+        margin: 25px 15px;
+        padding: 25px 20px;
+    }
+}

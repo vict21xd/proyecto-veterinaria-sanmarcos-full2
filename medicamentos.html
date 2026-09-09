@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicamentos | Veterinaria San Marcos</title>
+    <meta name="description" content="Medicamentos y vacunas disponibles en Veterinaria San Marcos.">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Veterinaria San Marcos</h1>
+
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="citas.html">Citas</a>
+            <a href="medicamentos.html" aria-current="page">Medicamentos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="encabezado-servicios">
+
+            <h2>Medicamentos y/o Vacunas</h2>
+
+            <p>
+                Seleccione la categoría y luego el medicamento o vacuna que desea consultar.
+            </p>
+
+        </section>
+
+        <section class="catalogo-medicamentos">
+
+            <div class="formulario-medicamentos">
+
+                <div class="filtro-medicamento">
+
+                    <label for="categoria-medicamento">
+                        Categoría
+                    </label>
+
+                    <select id="categoria-medicamento" name="categoria-medicamento" required>
+
+                        <option value="">
+                            Selecciona una categoría
+                        </option>
+
+                        <option value="Antibióticos">
+                            Antibióticos
+                        </option>
+
+                        <option value="Antiparasitarios">
+                            Antiparasitarios
+                        </option>
+
+                        <option value="Antiinflamatorios">
+                            Antiinflamatorios
+                        </option>
+
+                        <option value="Dermatología">
+                            Dermatología
+                        </option>
+
+                        <option value="Digestivo">
+                            Digestivo
+                        </option>
+
+                        <option value="Cardíaco">
+                            Cardíaco
+                        </option>
+
+                        <option value="Analgésicos">
+                            Analgésicos
+                        </option>
+
+                        <option value="Vacunas">
+                            Vacunas
+                        </option>
+
+                        <option value="Suplementos">
+                            Suplementos
+                        </option>
+
+                    </select>
+
+                    <span id="error-categoria-medicamento" class="error"></span>
+
+                </div>
+
+                <div id="contenedor-medicamento" class="filtro-medicamento oculto">
+
+                    <label for="medicamento-seleccionado">
+                        Nombre Comercial
+                    </label>
+
+                    <select id="medicamento-seleccionado" name="medicamento" required>
+
+                        <option value="">
+                            Elija una opcion
+                        </option>
+
+                    </select>
+
+                    <span id="error-medicamento-seleccionado" class="error"></span>
+
+                </div>
+
+                <p id="mensaje-medicamento" class="mensaje-medicamento oculto"></p>
+
+            </div>
+
+            <div id="detalle-medicamento" class="detalle-medicamento oculto">
+
+                <div class="detalle-contenido">
+
+                    <div class="detalle-encabezado">
+
+                        <span id="detalle-categoria" class="detalle-categoria">
+                            Categoría
+                        </span>
+
+                        <h2 id="detalle-nombre">
+                            Nombre del medicamento
+                        </h2>
+
+                        <p id="detalle-codigo">
+                            Código: ME000
+                        </p>
+
+                    </div>
+
+                    <div class="detalle-datos">
+
+                        <div class="dato-medicamento">
+
+                            <span>
+                                Principio activo
+                            </span>
+
+                            <strong id="detalle-principio">
+                                -
+                            </strong>
+
+                        </div>
+
+                        <div class="dato-medicamento">
+
+                            <span>
+                                Presentación
+                            </span>
+
+                            <strong id="detalle-presentacion">
+                                -
+                            </strong>
+
+                        </div>
+
+                        <div class="dato-medicamento">
+
+                            <span>
+                                Especie
+                            </span>
+
+                            <strong id="detalle-especie">
+                                -
+                            </strong>
+
+                        </div>
+
+                        <div class="dato-medicamento">
+
+                            <span>
+                                Stock disponible
+                            </span>
+
+                            <strong id="detalle-stock">
+                                -
+                            </strong>
+
+                        </div>
+
+                        <div class="dato-medicamento precio-medicamento">
+
+                            <span>
+                                Precio unitario
+                            </span>
+
+                            <strong id="detalle-precio">
+                                -
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Veterinaria San Marcos - Rancagua
+        </p>
+
+        <nav aria-label="Enlaces del pie de página">
+
+            <a href="index.html">Inicio</a> ·
+            <a href="servicios.html">Servicios</a> ·
+            <a href="citas.html">Citas</a> ·
+            <a href="medicamentos.html">Medicamentos</a> ·
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+        <p>
+            © 2026 Veterinaria San Marcos
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
